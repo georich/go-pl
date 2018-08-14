@@ -13,4 +13,9 @@ func main() {
 		sep = " "
 	}
 	fmt.Println(s)
+
+	// Exercise 1.1 Modify program to print index and values of each arg, 1 per line
+	for i, arg := range os.Args[1:] {
+		fmt.Printf("%d %s\n", i, arg)
+	}
 }
